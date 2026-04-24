@@ -31,7 +31,7 @@ body {background-color:#0b0f19; color:#e5e7eb;}
 # =========================================================
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\Ayuj Shingte\Desktop\DAL_LAB_CA\cleaned_loan_data.csv")
+    df = pd.read_csv("leaned_loan_data.csv")
 
     cols = pd.Series(df.columns).astype(str).str.strip().str.lower().str.replace(" ", "_")
 
